@@ -17,7 +17,7 @@ public class EmbeddingStoreConfig {
     @Bean
     public EmbeddingStore<TextSegment>embeddingstore(){
     //创建向量存储
-        String apiKey = "pcsk_6LWLX4_7p5XEsxo6nbkUurUkoMLjXoUz6UYs4skTw2UoFxMqQmbboXyJenYUjHL3ZqVJyb";
+        String apiKey = "";
         EmbeddingStore<TextSegment> embeddingStore = PineconeEmbeddingStore.builder()
                 .apiKey(apiKey)
                 .index("index")//如果指定的索引不存在，将创建一个新的索引
